@@ -1,0 +1,85 @@
+<%- include("partials/header") %>
+<!-- Contact Header Section -->
+<div class="position-relative" style="height: 400px; background: url('/assets/images/contact_us.jpg') center center/cover no-repeat;">
+  <div class="d-flex justify-content-center align-items-center h-100 w-100">
+    <h1 class="text-white fw-bold" style="font-size: 4rem;">CONTACT</h1>
+  </div>
+</div>
+
+  <!-- Your contact form here -->
+   <!-- In your EJS file (e.g., header.ejs or contact.ejs) -->
+<div class="container contact-section mt-2">
+  <div class="row">
+    <div class="col-12 text-center mb-2">
+      <h2 class="contact-heading">CONTACT US</h2>
+      <p class="contact-subheading">We are looking forward to hear from you.</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <form id="contactForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name :</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email :</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">How can we help? :</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Submit</button>
+      </form>
+    </div>
+    
+    <div class="col-md-6 mt-4 mt-md-0">
+      <div class="contact-info">
+        <div class="info-item mt-4">
+          <i class="bi bi-geo-alt-fill text-success" style="font-size: 2rem;"></i> 
+          <div>
+            <p class="mb-0">909 3rd Avenue</p>
+            <p class="mb-0">PO Box 1611</p>
+            <p>New York, NY 10150</p>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <i class="bi bi-telephone-fill text-success" style="font-size: 2rem;" ></i>
+          <p class="mb-0">(212) 328-0152</p>
+        </div>
+        
+        <div class="info-item">
+          <i class="bi bi-envelope-fill text-success" style="font-size: 2rem;"></i>
+          <p class="mb-0">info@greenarclighting.com</p>
+        </div>
+        
+        <div class="info-item">
+          <i class="bi bi-globe text-success" style="font-size: 2rem;"></i>
+          <p class="mb-0">greenarcadv.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+  <div class="container-fluid my-2">
+    <h2 class="text-center mb-3">Our Location</h2>
+    <div class="ratio" style="--bs-aspect-ratio: 30%;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9198536352845!2d-73.97654868459396!3d40.75797517932664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fbd7aa6c5b%3A0xf582e7dcbdbd85f4!2s909%203rd%20Ave%2C%20New%20York%2C%20NY%2010150%2C%20USA!5e0!3m2!1sen!2sin!4v1715348661743!5m2!1sen!2sin" 
+        width="600" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>  
+  <%- include('partials/footer') %>
+  </body>
+  </html>

@@ -1,0 +1,119 @@
+.home-contact-section {
+    background: url('/assets/images/home_contact.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    color: #fff;
+  }
+  
+  .home-contact-box {
+    
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+  }
+  
+  .home-contact-heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .home-contact-subheading {
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  .home-form-control {
+    padding: 12px;
+    background-color: #dce0e5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .home-btn-success {
+    background-color: #009900;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+  }
+  
+  .home-contact-info {
+    padding-left: 20px;
+  }
+  
+  .home-info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .home-info-item i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    padding: 5px;
+    
+    border-radius: 50%; /* make it round */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    color: #20c515;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .home-contact-info {
+      padding-left: 0;
+      margin-top: 30px;
+    }
+  }
+
+  /* our services section css */
+  .service-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+
+  .service-box:hover {
+    background-color: #f8f9fa;
+    color: #000;
+  }
+
+  .service-box:hover .service-title,
+  .service-box:hover .read-more {
+    color: #000;
+  }
+
+  .service-icon {
+    font-size: 2.2rem;
+    color: #198754;
+    margin-bottom: 1rem;
+  }
+
+  .service-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: #198754;
+    text-transform: uppercase;
+  }
+
+  .service-desc {
+    font-size: 13px;
+    color: #444;
+    margin: 10px 0;
+  }
+
+  .read-more {
+    font-size: 13px;
+    color: #198754;
+    text-decoration: none;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
