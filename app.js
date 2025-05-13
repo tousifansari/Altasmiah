@@ -11,7 +11,6 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.use(require("./allRoutes/AllRouter"));
 
-
 const port = process.env.PORT || 10000;
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
