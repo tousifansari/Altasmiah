@@ -13,7 +13,7 @@ routes.use("/api/Energies", require("../Controllers/ServicesController"));
 routes.use("/api/Distribution", require("../Controllers/ServicesController"));
 routes.use("/api/Photometric_Analysis",require("../Controllers/ServicesController"));
 routes.use("/api/solutions", require("../Controllers/SolutionsController"));
-routes.use("/api/contact", require("../Controllers/contactController"));
+routes.use("/api/contact", require("../Controllers/ContactController"));
 
 
 module.exports = routes;
