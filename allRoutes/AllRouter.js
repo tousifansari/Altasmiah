@@ -1,7 +1,7 @@
 const express = require("express");
 const routes = express.Router();
 
-routes.use("/api/Home", require("../Controllers/HomeController"));
+routes.use("/", require("../Controllers/HomeController"));
 routes.use("/api/About", require("../Controllers/aboutController"));
 routes.use("/api/Blog", require("../Controllers/blogController"));
 routes.use("/api/GreenArcGallery", require("../Controllers/GalleryController"));
@@ -12,7 +12,7 @@ routes.use("/api/TurnKey_Installation", require("../Controllers/ServicesControll
 routes.use("/api/Energies", require("../Controllers/ServicesController"));
 routes.use("/api/Distribution", require("../Controllers/ServicesController"));
 routes.use("/api/Photometric_Analysis",require("../Controllers/ServicesController"));
-routes.use("/api/solutions", require("../Controllers/solutionsController"));
+routes.use("/api/solutions", require("../Controllers/SolutionsController"));
 routes.use("/api/contact", require("../Controllers/contactController"));
 
 
