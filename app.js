@@ -10,8 +10,7 @@ app.use('/assets', express.static(__dirname + '/assets'));
 app.use(require("./allRoutes/AllRouter"));
 
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+const port = process.env.PORT || 10000;
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });
