@@ -7,12 +7,11 @@ app.set("views", path.join(__dirname, "views"));
 app.use('/assets', express.static(__dirname + '/assets'));
 
 
-app.use(require("./allRoutes/AllRouter"));
+app.use(require("./allRouter/AllRouter"));
 
 
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(port, ()=>
-{
-    console.log("server running", port);
-})
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
