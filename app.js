@@ -10,6 +10,7 @@ app.set("views", path.join(__dirname, "views")); // Agar views src ke andar hai,
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.use(require("./allRoutes/AllRouter"));
+console.log('Views path:', app.get('views'));
 
 const port = process.env.PORT || 10000;
 app.listen(port, () => {
