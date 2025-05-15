@@ -4,8 +4,7 @@ const path = require("path");
 
 // View engine setup
 app.set("view engine", "ejs");
-app.set("Views", path.join(__dirname, "Views")); // Agar views src ke andar hai, warna "views" rakho
-
+app.set('views', './views'); // Ensure 'views' folder exists and contains your EJS files
 // Static files
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
